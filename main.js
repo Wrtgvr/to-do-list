@@ -14,6 +14,7 @@ addTaskFormEl.addEventListener("submit", e => {
 
 function removeTask(e) {
     e.target.parentElement.remove()
+    tasks.splice(tasks.indexOf(e.target.textContent), 1)
 }
 
 function markTaskAsCompleted(e) {
@@ -28,6 +29,7 @@ function markTaskAsCompleted(e) {
 }
 
 function renderTasksList() {
+    console.log(tasks)
     tasksListEl.innerHTML = ""
     tasks.forEach(task => {
         const liEl = document.createElement("li")
