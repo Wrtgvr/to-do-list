@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
+:root {
+    --Yellow: #ffb731;
+    --LightGray: #ededed;
+    --Gray: #606060;
+    --DarkGray: #454545;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 24px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#task-input {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--LightGray);
+    padding: 14px;
+    border: none;
+    border-radius: 16px 0 0 16px;
+    width: 50vw;
+    min-width: 150px;
+    max-width: 400px;
+    height: 100%;
+    color: var(--DarkGray);
+    font-weight: 600;
+}
+
+#task-input:focus {
+    outline: none;
+}
+
+#submit-btn {
+    font-weight: bolder;
+    font-size: 1.25rem;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: var(--Yellow);
+    border: none;
+    border-radius: 0 100% 100% 0;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+#submit-btn:hover {
+    background-color: #ed9a00;
+}
+
+#tasks-list {
+    position: relative;
+    list-style: none;
+    width: 50vw;
+    min-width: 150px;
+    max-width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+#tasks-list li {
+    position: relative;
+    background-color: var(--LightGray);
+    padding: 10px 18px;
+    border-radius: 10px;
+    width: 50vw;
+    min-width: 150px;
+    max-width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .8rem;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-task-btn {
+    position: relative;
+    background-image: url(./assets/bx-trash.png);
+    height: 20px;
+    aspect-ratio: 1;
+    background-position: 50% 50%;
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.125s;
+}
+
+.remove-task-btn:hover {
+    transform: scale(1.2);
+}
+
+.task-text-btn {
+    background: none;
+    border: none;
+    color: var(--DarkGray);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.task-text-btn:hover {
+    color: var(--Gray);
+    text-decoration: line-through;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: var(--Gray)
+}
