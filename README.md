@@ -5,4 +5,4 @@ This app allows users to:
 - Mark tasks as completed
 - Remove tasks from list
 
-You can try it (here)[https://wrtgvr.github.io/to-do-list/]
+You can try it [here](https://wrtgvr.github.io/to-do-list/)
