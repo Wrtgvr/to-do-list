@@ -29,7 +29,6 @@ function markTaskAsCompleted(e) {
 }
 
 function renderTasksList() {
-    console.log(tasks)
     tasksListEl.innerHTML = ""
     tasks.forEach(task => {
         const liEl = document.createElement("li")
